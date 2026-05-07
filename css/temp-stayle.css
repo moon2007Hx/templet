@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Agbalumo", system-ui;
+}
+body{
+    /* height: 1000vh; */
+}
+.parent{
+    
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+.nave{
+    height: 46px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nave img{
+    width: 80px;
+}
+.nave ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    display: none;
+    display: absolute;
+}
+.nave ul li a{
+    padding-left:12px ;
+    text-decoration: none; 
+    font-size: 18px;
+    color: black;
+}
+.nave ul li:hover{
+    transform: scaleX(1.7);
+    transform: translateY(-10px);
+}
+.nave i{
+    font-size: 30px;
+}
+.contenier{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* xsmall */
+@media (max-width: 430px) {
+.container {
+    width: 412px;
+}
+.crad div{
+    padding-left: 25px;
+}
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.agbalumo-regular
+{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+    .title{
+    position: relative;
+    text-align: center;
+    background-image: url(../matireals/download\ \(3\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 46px);
+    margin: 0;
+} 
+.sentens{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    line-height: 1.9;
+    font-weight: 600;
+}
+.sentens h1{
+    margin: 0;
+}
+.crad{
+    position: relative;
+    padding-top: 20px;
+    left: 15%;
+    padding-left:35px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 60px;
+    /* flex-wrap: wrap; */
+}
+.crad h2{
+    padding-bottom: 15px;
+}
+.crad i{
+    font-size: 50px;
+    color: rgb(16, 202, 183);
+    padding-bottom: 3px;
+}
+.card p{
+    
+    font-size: 19px;
+}
+.crad div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 308px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    
+}
+.sur{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    /* padding-bottom: 50px; */
+
+}
+.sur h1{
+    font-size: 250px;
+    padding-top: 20px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.sur p{
+    position: absolute;
+    top: 200px;
+    font-size: 60px;
+}
+.proto{
+    position: relative;
+    right: 0;
+    margin-top: 60px;
+    padding-top:60px;
+    margin-right:0 ;
+    margin-left: 0;
+    padding-right:0 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    width: 600px;
+    padding-left: 70px;
+}
+.proto .one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+
+}
+.proto .one i{
+    padding-right:25px;
+    font-size: 30px;
+    color: rgb(16, 202, 183); 
+    padding-bottom: 80px;
+}
+.proto .one h3{
+    padding-bottom: 10px;
+    margin: 0;
+}
+.proto .frist{
+    grid-column: 1/2;
+} 
+
+.frist-proto{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding-top:60px;
+    margin-right:0 ;
+    margin-left: 0;
+    padding-right:0 ;
+}
+.frist-proto span{
+    position: relative;
+    right: 40px;
+    bottom: 2px;
+    width: 350px;
+    height: 290px;
+}
+.frist-proto img{
+    object-fit: cover;
+    width: 322px;
+    height: 329px;
+}
+.frist-proto span::before{
+    content: "";
+    background-color: #2c4755;
+    z-index: -1;
+    position: absolute;
+    top: -66px;
+    right: -8px;
+    width: 114px;
+    height: 150%;
+}
+.protof{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    padding-top: 70px;
+}
+
+.protof h1{
+    font-size: 250px;
+    padding-top: 20px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.protof p{
+    position: absolute;
+    top: 270px;
+    font-size: 60px;
+}
