@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
 }
 .nave{
+    position: relative;
     height: 46px;
     flex-direction: row;
     display: flex;
@@ -22,24 +23,50 @@ body{
 }
 .nave img{
     width: 80px;
+        top: 6px;
+    position: relative;
+}
+.nave .menu:hover ul{
+    display: block;
+
 }
 .nave ul{
+    display: none;
     text-decoration: none;
     list-style: none;
-    display: flex;
-    align-items: center;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
     padding-top: 8px;
-    display: none;
-    display: absolute;
+    position: absolute;
+    right: 55px;
+    top: 16px;
+    background-color: #aaa;
+    border-radius:10px ;
+}
+.nave ul::after{
+    content:'';
+    top: 5px;
+    right: -18px;
+    position: absolute;
+    border:10px  solid ;
+    border-color: transparent  transparent transparent #aaa;
+    width: 0px;
+    height: 0px;
+}
+.nave ul li {
+    padding-top:7px ;
+    padding-bottom:7px ;
+    transition: 0.5s all ease-in-out;
 }
 .nave ul li a{
     padding-left:12px ;
     text-decoration: none; 
-    font-size: 18px;
+    font-size: 20px;
     color: black;
 }
-.nave ul li:hover{
-    transform: scaleX(1.7);
+.nave ul li:hover:not(:last-child){
+    border-bottom: 5px solid black;
     transform: translateY(-10px);
 }
 .nave i{
@@ -315,4 +342,86 @@ body{
     font-size: 25px;
     }
     
+}
+@media (max-width:375px){
+    .sur h1{
+        font-size: 75px !important;
+    }
+    .sur p {
+    font-size: 26px !important;
+    }
+    .protof h1{
+        font-size: 75px !important;
+    }
+    .protof p{
+    top: 165px;
+    font-size: 20px;
+    }
+    
+}
+
+@media (max-width:350px){
+    .crad{
+    position: initial !important;
+    padding-top: 20px !important;
+    padding-left: 0;
+    left: 0 !important;
+    }
+}
+@media (min-width:910px){
+    .crad{
+    left: 9%;
+    }
+    .sur h1{
+        font-size: 220px !important;
+    }
+
+    .sur p {
+    font-size: 48px;
+    }
+    .protof{
+    padding-top: 9px;
+    padding-bottom: 26px;
+    }
+    .protof h1{
+        font-size: 190px !important;
+    }
+    .protof p{
+    top: 202px;
+    font-size: 48px;
+}
+.frist-proto img{
+    position: absolute;
+    width: 226px;
+    left: 54px;
+}
+}
+@media (min-width:1024px){
+        .crad{
+    left: 10%;
+    }
+
+    .sur h1{
+        font-size: 220px !important;
+    }
+
+    .sur p {
+    font-size: 48px;
+    }
+    .protof{
+    padding-top: 9px;
+    padding-bottom: 26px;
+    }
+    .protof h1{
+        font-size: 190px !important;
+    }
+    .protof p{
+    top: 202px;
+    font-size: 48px;
+    }
+    .frist-proto img{
+    position: absolute;
+    width: 226px;
+    left: 75px;
+    }
 }
