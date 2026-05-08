@@ -144,7 +144,7 @@ body{
     position: relative;
     padding-top: 20px;
     left: 15%;
-    padding-left:35px ;
+    /*padding-left:35px ; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 60px;
@@ -327,4 +327,101 @@ body{
     position: absolute;
     top: 270px;
     font-size: 60px;
+}
+
+@media (max-width:430px)
+{
+    .protof{
+        padding-top: 10px;
+    }
+    .protof h1{
+        font-size: 85px !important;
+    }
+    .protof p{
+    top: 165px;
+    font-size: 25px;
+    }
+    
+}
+@media (max-width:375px){
+    .sur h1{
+        font-size: 75px !important;
+    }
+    .sur p {
+    font-size: 26px !important;
+    }
+    .protof h1{
+        font-size: 75px !important;
+    }
+    .protof p{
+    top: 165px;
+    font-size: 20px;
+    }
+    
+}
+
+@media (max-width:350px){
+    .crad{
+    position: initial !important;
+    padding-top: 20px !important;
+    padding-left: 0;
+    left: 0 !important;
+    }
+}
+@media (min-width:910px){
+    .crad{
+    left: 9%;
+    }
+    .sur h1{
+        font-size: 220px !important;
+    }
+
+    .sur p {
+    font-size: 48px;
+    }
+    .protof{
+    padding-top: 9px;
+    padding-bottom: 26px;
+    }
+    .protof h1{
+        font-size: 190px !important;
+    }
+    .protof p{
+    top: 202px;
+    font-size: 48px;
+}
+.frist-proto img{
+    position: absolute;
+    width: 226px;
+    left: 54px;
+}
+}
+@media (min-width:1024px){
+        .crad{
+    left: 10%;
+    }
+
+    .sur h1{
+        font-size: 220px !important;
+    }
+
+    .sur p {
+    font-size: 48px;
+    }
+    .protof{
+    padding-top: 9px;
+    padding-bottom: 26px;
+    }
+    .protof h1{
+        font-size: 190px !important;
+    }
+    .protof p{
+    top: 202px;
+    font-size: 48px;
+    }
+    .frist-proto img{
+    position: absolute;
+    width: 226px;
+    left: 75px;
+    }
 }
