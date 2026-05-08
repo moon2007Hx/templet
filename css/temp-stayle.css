@@ -359,8 +359,24 @@ body{
     }
     
 }
+@media (min-width:375px){
+    .sur h1{
+        font-size: 75px !important;
+    }
+    .sur p {
+    font-size: 26px !important;
+    }
+    .protof h1{
+        font-size: 75px !important;
+    }
+    .protof p{
+    top: 165px;
+    font-size: 20px;
+    }
+    
+}
 
-@media (max-width:350px){
+@media (max-width:360px){
     .crad{
     position: initial !important;
     padding-top: 20px !important;
