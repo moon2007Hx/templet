@@ -108,11 +108,16 @@ body{
 .sentens h1{
     margin: 0;
 }
+@media (max-width:430px){
+    .crad{
+        left: 5% !important;
+    }
+}
 .crad{
     position: relative;
     padding-top: 20px;
     left: 15%;
-    padding-left:35px ;
+    /*padding-left:35px ; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 60px;
@@ -127,7 +132,6 @@ body{
     padding-bottom: 3px;
 }
 .card p{
-    
     font-size: 19px;
 }
 .crad div{
@@ -148,6 +152,15 @@ body{
     height: 250px;
     /* padding-bottom: 50px; */
 
+}
+@media (max-width: 430px) {
+    .sur h1 {
+        font-size: 99px !important;
+    }
+    .sur p{
+    top: 141px !important;
+    font-size: 35px !important;
+    }
 }
 .sur h1{
     font-size: 250px;
@@ -208,6 +221,44 @@ body{
     margin-left: 0;
     padding-right:0 ;
 }
+@media (max-width:430px){
+    .frist-proto span{
+        display: none;
+    }
+    .frist-proto {
+        display: block;
+        margin-top: 0;
+        padding-top: 0;
+        height: 900px;
+    }
+    .proto{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin-top: 0;
+        padding-top: 0;
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        padding-right: 30px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .proto p{
+        
+    }
+
+    .proto h3{
+    font-size: 26px;
+    }
+
+    .proto .one i {
+        font-size: 41px !important;
+        padding-bottom: 0;
+    }
+    .proto .one {
+        flex-direction: column;
+    }
+}
 .frist-proto span{
     position: relative;
     right: 40px;
@@ -249,4 +300,19 @@ body{
     position: absolute;
     top: 270px;
     font-size: 60px;
+}
+
+@media (max-width:430px)
+{
+    .protof{
+        padding-top: 10px;
+    }
+    .protof h1{
+        font-size: 85px !important;
+    }
+    .protof p{
+    top: 165px;
+    font-size: 25px;
+    }
+    
 }
